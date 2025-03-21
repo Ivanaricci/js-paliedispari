@@ -7,10 +7,10 @@ function wordPalindroma (word){
     let letters = word.split('')
     
     // inverto l'array
-    let arrayRev = word.reverse()
+    let arrayRev = letters.reverse()
 
     // unisco le lettere per ricreare la parola per il confronto
-    let wordRev = word.join('')
+    let wordRev = arrayRev.join('')
 
     return word === wordRev
 }
