@@ -1,7 +1,23 @@
 // Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma
 
+
+
+function wordPalindroma (word){
+    // creo l'arrey con le lettere della parola
+    let letters = word.split('')
+    
+    // inverto l'array
+    let arrayRev = word.reverse()
+
+    // unisco le lettere per ricreare la parola per il confronto
+    let wordRev = word.join('')
+
+    return word === wordRev
+}
+
 let wordUser = prompt('inserisci qui la tua parola')
 console.log(wordUser)
+
 
 
 
