@@ -56,25 +56,31 @@ let numUser = parseInt(prompt('inserisci un numero da 1 a 5'))
 console.log(numUser)
 
 
-function evenOdd (x,y){
-    let result= ''
-    // creo un numero random del pc
-    let numPc = Math.floor(Math.random() * 5) + 1
-    console.log(numPc)
-
-    // sommo il numero generato con quello dell'utente
-    let sum = numPc+numUser
-    console.log(sum)
-
-    if(sum % 2 === 0){
-        result = 'pari'
-    }
-
-    else{
-        result = 'dispari'
-    }
-
-    return result
-
+function numRandom (){
+    return Math.floor(Math.random() * 5) + 1
 }
 
+let numPc = numRandom()
+console.log(numPc)
+
+let sum = numPc+numUser
+console.log(sum)
+
+function evenOdd (num){
+    if (num % 2 === 0){
+        return "pari"
+    }
+    else{
+        return "dispari"
+    }
+}
+
+let result = evenOdd(sum)
+console.log(result)
+
+if(result === playUser){
+    console.log('Hai vinto')
+}
+else{
+    console.log('Hai perso')
+}
