@@ -18,7 +18,15 @@ function wordPalindroma (word){
 let wordUser = prompt('inserisci qui la tua parola')
 console.log(wordUser)
 
+let palindroma = wordPalindroma (wordUser)
 
+if (palindroma = true){
+    console.log(`la parola è palindroma`)
+}
+
+else{
+    console.log(`la parola non è palindroma`)
+}
 
 
 // Pari e Dispari
