@@ -5,12 +5,15 @@
 function wordPalindroma (word){
     // creo l'arrey con le lettere della parola
     let letters = word.split('')
+    console.log(letters)
     
     // inverto l'array
     let arrayRev = letters.reverse()
+    console.log(arrayRev)
 
     // unisco le lettere per ricreare la parola per il confronto
     let wordRev = arrayRev.join('')
+    console.log(wordRev)
 
     return word === wordRev
 }
@@ -20,7 +23,7 @@ console.log(wordUser)
 
 let palindroma = wordPalindroma (wordUser)
 
-if (palindroma = true){
+if (palindroma){
     console.log(`la parola è palindroma`)
 }
 
